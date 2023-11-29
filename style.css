@@ -6,3 +6,42 @@ body {
     margin: 0;
     min-height: 100vh; /* Always stretch background to to at least the full height of the screen even if the content isn't enough to take up the full height of the screen */
 }
+
+footer {
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a {
+    cursor: pointer;
+    font-size: 75%;
+    width: 25%;
+    height: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    padding: 0.5rem 0.5rem;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 0 0.3rem rgb(121, 121, 121, 0.65);
+}
+
+footer a:hover {
+    filter: brightness(110%);
+}
+
+footer a:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+    footer a {
+        font-size: 55%;
+    }
+}
